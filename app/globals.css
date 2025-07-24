@@ -1,36 +1,44 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --theme-bg: #f0f2f5; 
+  --theme-text: #333d47; 
+  --theme-scrollbar-track: #c0c0c030;
+  --theme-scrollbar-thumb: #80808060;
+  --theme-glass-bg-opacity: 0.1;
+  --theme-glass-border-opacity: 0.1;
+  --theme-glass-shadow-color: rgba(0, 0, 0, 0.1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html[data-theme='dark'] {
+  --theme-bg: #0c0a09; 
+  --theme-text: #f1f5f9;
+  --theme-scrollbar-track: #00000030;
+  --theme-scrollbar-thumb: #ffffff40;
+  --theme-glass-bg-opacity: 0.05; 
+  --theme-glass-border-opacity: 0.2; 
+  --theme-glass-shadow-color: rgba(0, 0, 0, 0.5);
 }
 
 body {
-  background-image: url('/bg.jpg');
+  background-image: url('https://png.pngtree.com/png-vector/20221021/ourmid/pngtree-japanese-cloud-pattern-chinese-background-png-image_6334967.png');
   background-repeat: repeat;
   background-attachment: fixed; 
   background-size: 300px 300px;
-  background-color: #0c0a09; 
-  color: #000d1b;
+  background-color: var(--theme-bg); 
+  color: var(--theme-text);
 }
 
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #00000030;
+  background: var(--theme-scrollbar-track);
 }
 ::-webkit-scrollbar-thumb {
-  background: #ffffff40;
+  background: var(--theme-scrollbar-thumb);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffffff60;
+  background: var(--theme-scrollbar-thumb); 
 }

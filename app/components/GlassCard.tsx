@@ -58,8 +58,8 @@ export const GlassCard = ({ children, className = '', delay = 0 }: GlassCardProp
       style={{
         background: `linear-gradient(to bottom, ${lightColor}20, ${darkColor}71)`, 
         borderColor: `${selectedBaseColor}50`,
-        backdropFilter: 'blur(5px)', 
-        WebkitBackdropFilter: 'blur(5px)', 
+        backdropFilter: 'blur(15px)', 
+        WebkitBackdropFilter: 'blur(15px)', 
       }}
     >
       <div 

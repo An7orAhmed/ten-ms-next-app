@@ -27,7 +27,7 @@ export const LeftContent = ({ description, sections }: LeftContentProps) => {
   return (
     <div className="space-y-8">
       <GlassCard className="group p-6 md:p-8" delay={0.2}>
-        <h2 className="mb-4 text-2xl font-bold text-black md:text-3xl">Course Overview</h2>
+        <h2 className="mb-4 text-2xl font-bold md:text-3xl">Course Overview</h2>
         <HtmlRenderer htmlString={description} />
       </GlassCard>
 
@@ -43,8 +43,8 @@ export const LeftContent = ({ description, sections }: LeftContentProps) => {
                 <div key={item.id} className="flex items-start space-x-4">
                   {item.icon && <Image src={item.icon} alt={item.title} width={40} height={40} className="h-10 w-10 flex-shrink-0" />}
                   <div>
-                    <h4 className="font-semibold text-black">{item.title}</h4>
-                    <p className="text-black">{item.subtitle}</p>
+                    <h4 className="font-semibold">{item.title}</h4>
+                    <p>{item.subtitle}</p>
                   </div>
                 </div>
               ))}
@@ -62,7 +62,7 @@ export const LeftContent = ({ description, sections }: LeftContentProps) => {
           <div className="space-y-6">
             {detailsSection.values.map((item: any) =>(
               <div key={item.id}>
-                  <HtmlRenderer htmlString={item.title} className="text-xl font-semibold !text-black" />
+                  <HtmlRenderer htmlString={item.title} className="text-xl font-semibold" />
                   <HtmlRenderer htmlString={item.description} className="mt-2" />
               </div>
             ))}

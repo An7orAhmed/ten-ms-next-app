@@ -15,9 +15,9 @@ export const TestimonialsSection = ({ title, testimonials, delay = 0 }: { title:
             height={80}
             className="mx-auto rounded-full border-2 border-white/20 object-cover"
           />
-          <h4 className="text-xl mt-4 font-bold text-black">{testimonial.name}</h4>
+          <h4 className="text-xl mt-4 font-bold">{testimonial.name}</h4>
           <p className="text-sm font-medium text-gray-500">{testimonial.description}</p>
-          <p className="mt-3 text-sm text-black">{testimonial.testimonial}</p>
+          <p className="mt-3 text-sm">{testimonial.testimonial}</p>
         </div>
       ))}
     </div>

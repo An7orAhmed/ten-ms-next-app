@@ -16,8 +16,8 @@ export const InstructorsSection = ({ title, instructors, delay = 0 }: { title: s
             height={120}
             className="rounded-full border-4 border-white/20 object-cover shadow-lg"
           />
-          <h4 className="mt-4 text-xl font-bold text-black">{instructor.name}</h4>
-          <p className="text-md font-medium text-black">{instructor.short_description}</p>
+          <h4 className="mt-4 text-xl font-bold">{instructor.name}</h4>
+          <p className="text-md font-medium">{instructor.short_description}</p>
           <HtmlRenderer htmlString={instructor.description} className="mt-2 text-sm" />
         </div>
       ))}

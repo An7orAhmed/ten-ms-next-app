@@ -16,11 +16,11 @@ const FaqEntry = ({ item }: { item: FaqItem }) => {
         onClick={() => setIsOpen(!isOpen)}
         className="flex w-full items-center justify-between text-left transition-colors hover:text-blue-900"
       >
-        <span className="font-semibold text-black">{item.question}</span>
+        <span className="font-semibold">{item.question}</span>
         {isOpen ? (
-          <MinusIcon className="h-5 w-5 flex-shrink-0 text-black" />
+          <MinusIcon className="h-5 w-5 flex-shrink-0" />
         ) : (
-          <PlusIcon className="h-5 w-5 flex-shrink-0 text-black" />
+          <PlusIcon className="h-5 w-5 flex-shrink-0" />
         )}
       </button>
       <AnimatePresence>

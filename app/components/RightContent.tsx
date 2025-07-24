@@ -14,7 +14,7 @@ export const RightContent = ({ data }: RightContentProps) => {
   return (
     <div className="sticky top-28 space-y-8"> 
       <GlassCard className="group p-4 md:p-6" delay={0.2}>
-        <h3 className="mb-4 text-xl font-bold">Course Trailer</h3>
+        <h3 className="mb-4 text-2xl font-bold">Course Trailer</h3>
         <div className="aspect-video overflow-hidden rounded-lg border border-white/10">
           {trailerUrl ? (
             <iframe
