@@ -12,13 +12,6 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background-image: url('/bg.jpg');
   background-repeat: repeat;
@@ -40,13 +33,4 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #ffffff60;
-}
-
-@keyframes scroll-rtl {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 }
