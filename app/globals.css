@@ -20,7 +20,33 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('/bg.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed; 
+  background-size: 300px 300px;
+  background-color: #0c0a09; 
+  color: #000d1b;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #00000030;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff40;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff60;
+}
+
+@keyframes scroll-rtl {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
