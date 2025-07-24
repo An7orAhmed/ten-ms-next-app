@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   basePath: '/ten-ms-next-app',
   images: {
     unoptimized: true,
-    domains: ['cdn.10minuteschool.com', 's3.ap-southeast-1.amazonaws.com'],
+    domains: ['cdn.10minuteschool.com', 's3.ap-southeast-1.amazonaws.com', 'an7orahmed.github.io'],
   },
 };
 
