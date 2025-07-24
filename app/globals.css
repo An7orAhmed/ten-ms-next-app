@@ -21,10 +21,10 @@ html[data-theme='dark'] {
 }
 
 body {
-  background-image: url('https://img.freepik.com/premium-vector/simple-pattern-transparent-background-theme-school-learning-education_576736-30.jpg');
-  background-repeat: repeat;
+  background-image: url('https://www.pngplay.com/wp-content/uploads/9/Internet-Website-PNG-Photos.png');
+  background-repeat: repeat-x;
   background-attachment: fixed; 
-  background-size: 300px 300px;
+  background-size: contain;
   background-color: var(--theme-bg); 
   color: var(--theme-text);
 }
